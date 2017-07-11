@@ -130,7 +130,7 @@ header{
 
 /********************Button Content ********************/
 
-.btn:link, .btn:visited{
+.btn:link, .btn:visited, input[type="submit"]{
 	display:inline-block;
 	padding:10px 30px;
 	font-weight:300;
@@ -141,7 +141,7 @@ header{
 }
 
 .btn-full:link,
-.btn-full:visited{
+.btn-full:visited, input[type="submit"]{
  	background-color:#F39C12;
  	border:1px solid #F39C12;
  	color:#fff;
@@ -153,7 +153,7 @@ header{
 	color:#F39C12;
 }
 
-.btn:hover, .btn:active{
+.btn:hover, .btn:active, input[type="submit"]:hover, input[type="submit"]:active{
 	background-color:#cf6d17;
 	color:#fff;
 }
@@ -431,4 +431,33 @@ cite img{
 .plan-box div:last-child{
 	/*Last child of this is the button*/
 	text-align:center;
+}
+
+/**********CONTACT FORM SECTION ********/
+
+
+.contact-form{
+	width:60%;
+	margin:0 auto;
+}
+
+
+input[type=text],
+input[type=email],
+select,
+textarea{
+	width:100%;
+	padding:7px;
+	border-radius:3px;
+	border:1px solid #ccc;
+}
+
+textarea{
+	height:100px;
+}
+input[type="checkbox"]{
+	margin:10px 5px 10px 0;
+}
+*:focus{
+	outline:none;
 }
