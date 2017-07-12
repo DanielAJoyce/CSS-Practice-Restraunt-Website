@@ -219,6 +219,8 @@ header{
 	width:100%;
 	background-color:rgba(255,255,255,0.98);
 	box-shadow:0 2px 2px #efefef;
+	/*Brings straight to the front */
+	z-index:9999;
 }
 
 /* This will only apply when NAV has sticky class applied */
@@ -237,7 +239,7 @@ header{
 
 }
 
-.main-nav{margin-top:15px;}
+.sticky .main-nav{margin-top:15px;}
 /*************Navigation END *************/
 
 /************FEATURES *******************/
