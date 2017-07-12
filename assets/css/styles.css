@@ -461,3 +461,55 @@ input[type="checkbox"]{
 *:focus{
 	outline:none;
 }
+
+/*******FOOTER CONTENT *******/
+
+footer{
+	background-color:#333;
+	padding:40px;
+}
+
+footer p{
+	color:#888;
+	text-align:center;
+	font-size:90%;
+	margin-top:50px;
+}
+
+.footer-nav{
+	list-style:none;
+	float:left;
+}
+.social-links{
+	list-style:none;
+	float:right;
+}
+
+.footer-nav li, .social-links li{
+	display:inline-block;
+	margin-right:20px;
+}
+
+.social-links li:last-child,
+.footer-nav li:last-child{
+	margin:0;
+}
+
+.footer-nav li a:visited, .social-links li a:visited,
+.footer-nav li a:link, .social-links li a:link{
+	text-decoration: none;
+	border:0;
+	color:#888;
+	transition: color 0.2s;
+}
+
+.footer-nav li a:active, .footer-nav li a:hover, .social-links li a:hover,
+.social-links li a:active{
+		color:#ddd;
+}
+
+
+.social-links li a:link, .social-links li a:visited{
+		font-size:120%;
+}
+/* designpieces.com for social link colours */ 
