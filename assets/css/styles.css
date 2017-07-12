@@ -472,8 +472,8 @@ footer{
 footer p{
 	color:#888;
 	text-align:center;
-	font-size:90%;
-	margin-top:50px;
+	font-size:80%;
+	margin-top:30px;
 }
 
 .footer-nav{
@@ -510,6 +510,19 @@ footer p{
 
 
 .social-links li a:link, .social-links li a:visited{
-		font-size:120%;
+		font-size:150%;
 }
 /* designpieces.com for social link colours */ 
+
+.ion-social-facebook:hover{
+	color:#3b5998
+}
+.ion-social-twitter:hover{
+	color:#55acee;
+}
+.ion-social-googleplus:hover{
+	color:#dd4b39
+}
+.ion-social-instagram:hover{
+	color:#fffc00
+}

@@ -1,0 +1,26 @@
+
+
+
+/*These rules will apply when width is =< 480px */
+/* aka small phones */
+@media only screen and (max-width:480px){
+
+}
+
+/*These rules will apply when width is =< 767px */
+/* aka larger phones/small tablets */
+@media only screen and (max-width:767px){
+
+}
+
+/*These rules will apply when width is =< 1023px */
+/* aka small tablet to large tablet (iPad) */
+@media only screen and (max-width:1023px){
+
+}
+
+/* These rules will apply when width <= 1200px */
+/* Bigger tablet */
+@media only screen and (max-width:1200px){
+
+}
