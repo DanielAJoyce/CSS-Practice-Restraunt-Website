@@ -167,6 +167,21 @@ header{
 /****************Button Content END ****************/
 
 /*************Navigation***********************/
+.mobile-nav-icon{
+	float:right;
+	margin-top:30px;
+	cursor:pointer;
+
+
+	/* For now..*/
+	display:none;
+}
+
+.mobile-nav-icon i{
+	font-size:200%;
+	color:#fff;
+}
+
 
 .logo{
 	height:100px;
@@ -187,7 +202,7 @@ header{
 .main-nav{
 	float:right;
 	list-style:none;
-	margin-top:60px;
+	margin-top:55px;
 }
 
 .main-nav li{
@@ -565,3 +580,18 @@ footer p{
 .ion-social-instagram:hover{
 	color:#fffc00
 }
+
+/* Animations */
+
+.js-wp-1, .js-wp-2, .js-wp-3, .js-wp-4{
+	opacity:0;
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+}
+
+/*Means both classes together */
+.js-wp-1.animated, .js-wp-2.animated, .js-wp-3.animated, .js-wp-4.animated {
+	opacity:1.0;
+}
+
+

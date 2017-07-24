@@ -3,15 +3,38 @@
 <head>
 
 	<!--Will tell phone to not zoom when loading page. -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<meta name="viewport" content="width=device-width" />
+
 
 	<title>OmniFood Home Page</title>
-	<link rel="stylesheet" type="text/css" href="./assets/css/libraries/normalize.css">
-	<link rel="stylesheet" type="text/css" href="./assets/css/libraries/ionicons.min.css">
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="stylesheet" type="text/css" href="./assets/css/lib/normalize.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/lib/ionicons.min.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/lib/animate.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="./assets/css/libraries/grid.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/lib/grid.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/queries.css">
+
+
+	<link rel="apple-touch-icon" sizes="57x57" href="./assets/icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./assets/icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./assets/icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./assets/icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./assets/icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./assets/icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./assets/icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./assets/icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="./assets/icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./assets/icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+<link rel="manifest" href="./icons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
 
 </head>
 <body>
@@ -20,12 +43,13 @@
 			<div class="row">
 				<img src="./assets/css/img/logo-white.png" alt="OmniFood Logo" class="logo"/>
 				<img src="./assets/css/img/logo.png" alt="OmniFood Logo" class="logo-black"/>
-				<ul class="main-nav">
-					<li><a href="#features">Food Delivery</a></li>
+				<ul class="main-nav js-main-nav">
+					<li><a class="lol" href="#features">Food Delivery</a></li>
 					<li><a href="#works">How it Works</a></li>
 					<li><a href="#cities">Our cities</a></li>
 					<li><a href="#plans">Sign up</a></li>
 				</ul>
+				<a class="mobile-nav-icon js-nav-icon"><i class="ion-navicon-round"></i></a>
 			</div>
 		</nav>
 			<div class="hero-text-box">
@@ -36,12 +60,12 @@
 		</header>
 
 		<section class="section-features js-section-features" id="features">
-			<div class="row">
+			<div class="row ">
 				<h2>Get food fast &mdash; not fast food.</h2>
 				<p class="long-copy">Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, 
 				we promise!</p>
 			</div>
-			<div class="row">
+			<div class="row js-wp-1">
 			<div class="col span-1-of-4 box">
 				<i class="ion-ios-infinite-outline icon-big"></i>
 				<h3>Up to 365 days/year</h3>
@@ -89,7 +113,7 @@
 			</div>
 			<div class="row">
 				<div class="col span-1-of-2 steps-box">
-					<img src="./assets/css/img/app-iphone.png" alt="OmniFood app on iphone" class="app-screen"/>
+					<img src="./assets/css/img/app-iphone.png" alt="OmniFood app on iphone" class="app-screen js-wp-2"/>
 				</div>
 				<div class="col span-1-of-2 steps-box">
 					<div class="works-step">
@@ -117,7 +141,7 @@
 		<div class="row">
 			<h2>We're currently in these cities</h2>
 		</div>
-		<div class="row">
+		<div class="row js-wp-3">
 			<div class="col span-1-of-4 box">
 				<img src="./assets/css/img/lisbon-3.jpg" alt="lisbon"/>
 				
@@ -220,7 +244,7 @@
 		</div>
 		<div class="row">
 			<div class="col span-1-of-3">
-				<div class="plan-box">
+				<div class="plan-box js-wp-4">
 					<div>
 						<h3>Premium</h3>
 						<p class="plan-price">$399 <span>/month</span></p>
@@ -375,14 +399,9 @@
 		</footer>
 
 		<script
-  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-  crossorigin="anonymous"></script>
-<!-- 
-  	<script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script> -->
+  src="./assets/js/jquery.js"></script>
+
+
 		<script src="./assets/js/jquery.waypoints.min.js"></script>
 		<script src="./assets/js/script.js"></script>
 </body>
